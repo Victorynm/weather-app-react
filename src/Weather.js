@@ -37,7 +37,7 @@ function Weather() {
 					<small>
 						<span className="first-date"></span>
 						{WeatherData.date}
-						<span className="month"></span> <span id="hour"></span>.
+						<span className="month"></span> <span id="hour"></span>
 						<span id="minutes"></span>
 					</small>
 				</div>
@@ -56,7 +56,10 @@ function Weather() {
 					</span>
 				</div>
 				<div className="col-4 today">
-					<img src="" alt="" id="icon" />
+					<img
+						src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+						alt="partly_cloudy"
+					/>{" "}
 				</div>
 				<div className="col-4">
 					<p>
@@ -76,7 +79,18 @@ function Weather() {
 				<div className="col-12">
 					<small>Daily Forecast</small>
 				</div>
-				<div className="daily-forecast"></div>
+				<div className="daily-forecast">
+					<div className="day">
+						Friday
+						<br /> 05/08
+						<br />{" "}
+						<img
+							src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+							alt="partly_cloudy"
+						/>{" "}
+						<br /> 23° 15°
+					</div>
+				</div>
 			</div>
 		</div>
 	);

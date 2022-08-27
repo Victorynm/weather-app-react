@@ -1,17 +1,4 @@
 .App {
 	font-family: "Poppins", sans-serif;
-	color: white;
-	width: 60%;
 	margin: 50px;
-	padding: 30px 45px;
-	border: 1px solid #0c4e87;
-	border-radius: 4px;
-	background-image: linear-gradient(
-		to right top,
-		#457fb3,
-		#5e93c4,
-		#77a8d5,
-		#8fbde6,
-		#a7d2f8
-	);
 }

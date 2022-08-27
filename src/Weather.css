@@ -1,3 +1,19 @@
+.Weather {
+	color: white;
+	width: 70%;
+	border: 1px solid #0c4e87;
+	border-radius: 4px;
+	background-image: linear-gradient(
+		to right top,
+		#457fb3,
+		#5e93c4,
+		#77a8d5,
+		#8fbde6,
+		#a7d2f8
+	);
+	padding: 30px 45px;
+	margin-bottom: 30px;
+}
 form {
 	display: inline;
 }
@@ -22,9 +38,13 @@ h1 {
 	border: 1px solid #0c4e87;
 	border-radius: 30px;
 	line-height: 2;
+	margin-right: 5px;
 }
 .today {
 	font-size: 70px;
+}
+.today img {
+	width: 100px;
 }
 .day {
 	margin: 10px;
