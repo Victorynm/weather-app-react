@@ -14,8 +14,12 @@
 	padding: 30px 45px;
 	margin-bottom: 30px;
 }
+.current {
+	width: 100%;
+}
 form {
 	display: inline;
+	margin-bottom: 20px;
 }
 button {
 	color: white;
@@ -31,8 +35,8 @@ h2 {
 }
 h1 {
 	margin-top: 15px;
-	font-weight: 600;
 	padding-left: 30px;
+	font-weight: 900;
 }
 .search {
 	border: 1px solid #0c4e87;
@@ -78,17 +82,13 @@ p .img {
 #search-city:hover {
 	border: 1px solid white;
 }
-#fahrenheit {
-	color: white;
-}
-
+#fahrenheit,
 #сelsius {
 	color: white;
 }
 
 #git-link {
 	text-decoration: none;
-	margin-left: 50px;
 }
 #icon {
 	width: 140px;
