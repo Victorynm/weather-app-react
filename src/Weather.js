@@ -17,6 +17,7 @@ function Weather(props) {
 			description: responce.data.weather[0].description,
 			humidity: responce.data.main.humidity,
 			wind: responce.data.wind.speed,
+			icon: responce.data.weather[0].icon,
 		});
 	}
 	function changeCity(event) {

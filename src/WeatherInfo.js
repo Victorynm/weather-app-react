@@ -2,6 +2,7 @@ import React from "react";
 import FormattedDate from "./FormattedDate";
 import FormattedDay from "./FormattedDay";
 import FormattedTime from "./FormattedTime";
+import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherInfo(props) {
 	return (
@@ -35,10 +36,7 @@ export default function WeatherInfo(props) {
 				</span>
 			</div>
 			<div className="col-sm-4 today">
-				<img
-					src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-					alt="partly_cloudy"
-				/>{" "}
+				<WeatherIcon code={props.data.icon} />
 			</div>
 			<div className="col-sm-4">
 				<p>

@@ -92,6 +92,7 @@ p .img {
 }
 #icon {
 	width: 140px;
+	padding-left: 30px;
 }
 #description {
 	text-transform: capitalize;
