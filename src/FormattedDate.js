@@ -9,6 +9,14 @@ export default function FormattedDate(props) {
 	if (month < 10) {
 		month = `0${month}`;
 	}
+	let hour = props.date.getHours();
+	if (hour < 10) {
+		hour = `0${hour}`;
+	}
+	let minutes = props.date.getMinutes();
+	if (minutes < 10) {
+		minutes = `0${minutes}`;
+	}
 
-	return `${date}/${month}`;
+	return `${date}/${month} ${hour}:${minutes}`;
 }

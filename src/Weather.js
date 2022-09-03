@@ -12,8 +12,6 @@ function Weather(props) {
 			city: responce.data.name,
 			temperature: responce.data.main.temp,
 			date: new Date(responce.data.dt * 1000),
-			max: 23,
-			min: 15,
 			description: responce.data.weather[0].description,
 			humidity: responce.data.main.humidity,
 			wind: responce.data.wind.speed,
@@ -37,7 +35,7 @@ function Weather(props) {
 		return (
 			<div className="Weather">
 				<div className="row">
-					<div className="col-md-9">
+					<div className="col-md-12">
 						<form onSubmit={handleSubmit}>
 							<input
 								type="search"
@@ -50,9 +48,7 @@ function Weather(props) {
 							</button>
 						</form>
 					</div>
-					<div className="col-md-3">
-						<button className="search current">Current Location</button>
-					</div>
+
 					<WeatherInfo data={weatherData} />
 				</div>
 			</div>

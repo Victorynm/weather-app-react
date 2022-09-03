@@ -6,7 +6,7 @@ function App() {
 		<div className="App">
 			<div className="container">
 				<Weather defaultCity="London" />
-				<p>
+				<p className="text-center">
 					<a
 						href="https://github.com/Victorynm/weather-app-react"
 						rel="noreferrer"
