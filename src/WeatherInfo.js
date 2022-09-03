@@ -3,6 +3,7 @@ import FormattedDate from "./FormattedDate";
 import FormattedDay from "./FormattedDay";
 import FormattedTime from "./FormattedTime";
 import WeatherIcon from "./WeatherIcon";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherInfo(props) {
 	return (
@@ -23,17 +24,7 @@ export default function WeatherInfo(props) {
 			</div>
 			<div className="col-sm-4 today">
 				{" "}
-				{Math.round(props.data.temperature)}
-				<span className="degree">
-					{" "}
-					<a href="#" className="active" id="сelsius">
-						℃
-					</a>{" "}
-					|{" "}
-					<a href="#" id="fahrenheit">
-						℉
-					</a>
-				</span>
+				<WeatherTemperature celsius={props.data.temperature} />
 			</div>
 			<div className="col-sm-4 today">
 				<WeatherIcon code={props.data.icon} />
