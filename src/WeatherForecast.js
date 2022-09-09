@@ -41,6 +41,8 @@ export default function WeatherForecast(props) {
 								{Math.round(dailyForecast.temp.min)}°
 							</div>
 						);
+					} else {
+						return null;
 					}
 				})}
 			</div>
